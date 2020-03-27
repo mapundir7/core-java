@@ -10,7 +10,7 @@ MAINTAINER Manish Pundir <mapundir7@gmail.com>
 VOLUME /app/tmp
 
 # The application's jar file
-ARG JAVA_CLASS=Anargam.java
+ARG JAVA_CLASS=program-1/Anargam.java
 
 # Add the application's jar to the container
 ADD ${JAVA_CLASS} .
