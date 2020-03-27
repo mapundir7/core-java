@@ -1,0 +1,16 @@
+# Start with a base image containing Java runtime
+FROM openjdk:8-jdk-alpine
+
+WORKDIR '/kite'
+
+# Add Maintainer Info
+MAINTAINER Manish Pundir <mapundir7@gmail.com>
+
+#As COPY command run in WORKDIR so second . means /develop 
+COPY ./ReverseString.java .
+
+RUN javac ReverseString.java
+
+# Run the jar file 
+CMD ["java", "ReverseString"]
+

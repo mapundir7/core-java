@@ -1,0 +1,22 @@
+# Start with a base image containing Java runtime
+FROM openjdk:8-jdk-alpine
+
+WORKDIR '/app'
+
+# Add Maintainer Info
+MAINTAINER Manish Pundir <mapundir7@gmail.com>
+
+# Add a volume pointing to /tmp
+VOLUME /app/tmp
+
+# The application's jar file
+ARG JAVA_CLASS=Anargam.java
+
+# Add the application's jar to the container
+ADD ${JAVA_CLASS} .
+
+RUN javac Anargam.java
+
+# Run the jar file 
+CMD ["java", "Anargam"]
+
