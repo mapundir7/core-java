@@ -4,10 +4,10 @@ import java.util.Scanner;
 public class Anargam {
 	public static void main(String[] args) {
 		System.out.println("Enter the string 1");
-		String num1 = new Scanner(System.in).next();
+		//String num1 = new Scanner(System.in).next();
 		System.out.println("Enter the string 2");
-		String num2 = new Scanner(System.in).next();
-		System.out.println("Anargam?" + isAnargam(num1, num2));
+		//String num2 = new Scanner(System.in).next();
+		System.out.println("Anargam?" + isAnargam("RAM", "SITA"));
 	}
 
 	public static boolean isAnargam(String num3, String num4) {
