@@ -4,7 +4,7 @@ services:
 
 # https://docs.docker.com/develop/develop-images/dockerfile_best-practices/
 before_install:
-  - docker build -t mapundir7/program-1 -f program-1/Dockerfile .
+  - docker build -t mapundir7/program-1 -f program-1/Dockerfile.dev .
 
 script:
   - docker run mapundir7/program-1
